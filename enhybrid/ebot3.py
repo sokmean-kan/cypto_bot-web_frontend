@@ -157,7 +157,7 @@ async def receive_name(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return WAIT_FOR_NAME
 
-    # ✅ Hybrid Encrypt
+    # ✅ Encrypt Hybrid
     encrypted = hybrid_encrypt(text_to_encrypt, username)
     escaped = escape_markdown(encrypted)
 
